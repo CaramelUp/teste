@@ -5,17 +5,13 @@
 <h1>HTML DOM Events</h1>
 <h2>The onclick Event</h2>
  
-<button type="button" onclick="shareButton()">Click Me!</button>
+<button type="button" onclick="myFunction()">Click Me!</button>
 
 <script>
+ 
 function myFunction() {
-  document.getElementById("demo").style.color = "red";
+   window.AndroidShareHandler.share('https://stackoverflow.com');
 }
-
-shareButton.addEventListener('click', () => {
-    window.AndroidShareHandler.share('https://stackoverflow.com');
-});
-
 
 </script>
 
