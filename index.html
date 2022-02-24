@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML DOM Events</h1>
+<h2>The onclick Event</h2>
+
+<h3 id="demo" onclick="shareButton()">Click this text to change the color.</h3>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").style.color = "red";
+}
+
+shareButton.addEventListener('click', () => {
+    window.AndroidShareHandler.share('https://stackoverflow.com');
+});
+
+
+</script>
+
+</body>
+</html>
