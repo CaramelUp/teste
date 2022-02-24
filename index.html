@@ -10,7 +10,11 @@
 <script>
  
 function myFunction() {
-   window.AndroidShareHandler.share('https://stackoverflow.com');
+   navigator.share({
+     title: 'Post do Trilista',
+     text: 'Post do Trilista',
+     url: 'https://trilista.com/post/5753',
+   })
 }
 
 </script>
